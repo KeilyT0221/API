@@ -165,7 +165,7 @@ app.put('/users/:dpi',(req, res)=>{
     }
     if(nombre) users[indiceUsuario].nombre = nombre;
     if(password){
-        if(!esPasswordValido(password)){
+        if(!esPasswordValido(password)){  
             return res.status(400).json({error:'Password no es valido'});
         }
         users[indiceUsuario].password = password;
