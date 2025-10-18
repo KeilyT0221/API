@@ -1,26 +1,21 @@
 {
-  "name": "api_usuarios",  
+  "name": "hoja-trabajo-6",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "server.js",
   "scripts": {
-    "dev": " nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "express-validator": "^7.2.1",
-    "install": "^0.13.0",
-    "morgan": "^1.10.1"
-  },
-  "devDependencies": {
+    "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.1.10"
   }
 }
