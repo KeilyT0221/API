@@ -1,22 +1,36 @@
-# 🧩 API REST - Gestión de Usuarios
+🧩 API de Gestión de Usuarios
 
-## 📘 Descripción
+Una API REST desarrollada con Node.js y Express para la gestión de usuarios, que implementa validaciones de DPI único, correo electrónico, y contraseña segura, cumpliendo buenas prácticas de seguridad y estructura de datos.
 
-Esta API REST fue desarrollada con **Node.js** y **Express** para la **gestión de usuarios**, permitiendo realizar operaciones CRUD (crear, listar, actualizar y eliminar usuarios).  
-Cuenta con validaciones para evitar duplicidad de DPI o correos electrónicos y asegurar contraseñas seguras.
+📋 Características
 
-El proyecto fue desplegado en **Render**, y la API está disponible en la siguiente dirección:
+➕ Crear, listar, actualizar y eliminar usuarios
 
-🔗 **URL de la API:** https://api-usuarios-2a6x.onrender.com
+🔒 Validación de DPI único (13 dígitos exactos)
 
-### 1️⃣ POST `/users`
-Crea un nuevo usuario.
+📧 Validación de email único y formato correcto
 
-**📥 Ejemplo de solicitud (JSON):**
-```json
+🔐 Validación de contraseña segura (mayúsculas, minúsculas, números y caracteres especiales)
+
+🔍 Filtros y paginación para listar usuarios
+
+📘 Documentación completa de la API
+
+🚀 Despliegue
+
+URL de producción:
+🔗 https://hoja-trabajo-6-w5he.onrender.com/
+
+📚 Endpoints Principales
+🟢 POST /users
+
+Crear un nuevo usuario
+
+Body:
+
 {
   "dpi": "1234567890123",
-  "name": "Keily Andrea",
-  "email": "keily@example.com",
-  "password": "Password@123"
+  "name": "Juan Pérez",
+  "email": "juan@example.com",
+  "password": "Password123!"
 }
